@@ -1,20 +1,57 @@
-# Python-generated files
+# ===============================
+# Python cache & compiled files
+# ===============================
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+
+# ===============================
+# Virtual environments
+# ===============================
+venv/
+.venv/
+env/
+ENV/
+
+# ===============================
+# Environment variables
+# ===============================
+.env
+.env.*
+
+# ===============================
+# IDE / Editor files
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===============================
+# Build / Distribution files
+# ===============================
 build/
 dist/
+*.egg-info/
 wheels/
-*.egg-info
 
-# Virtual environments
-.venv
+# ===============================
+# Logs
+# ===============================
+*.log
 
-venv/ 
+# ===============================
+# OS files
+# ===============================
+.DS_Store
+Thumbs.db
 
-venv 
+# ===============================
+# Streamlit
+# ===============================
+.streamlit/
 
-.env 
-
-.env/
-.vscode/
-.vscode
+# ===============================
+# Jupyter
+# ===============================
+.ipynb_checkpoints/
