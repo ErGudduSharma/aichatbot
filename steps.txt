@@ -18,5 +18,55 @@ Streamlit aplication --->
 function(query) + LLM(gemini) ---> Response (Textual format) 
 
 
+-------------------------------------------------------------------------------------------
+
+
+ec2....ye ekn rental computer hota h jisme hmm application ko deploy kr skte h, run kr skte h, packages ko install, or store kr skte h 
+        with different operating system ke sath...
+
+docker ...ye like a container hota h ...jo ki versioning compatible ka issue solve krta h, or ye apni application ki base  image crteate krta h...like application local system m 10GB ka h or ye compress krke 2-3GB kr deta h ...mtlb ki light weighted kr deta h 
+
+-------------------------------------------------------------------------------------
+
+### Steps for Docker Installation....
+sudo apt-get install docker.io -y
+
+## root user ki bjaye new user create kr de...
+sudo usermod -aG docker $USER && newgrp docker
+
+----------------------------------------------------------------------------------
+
+## for create docker file ---> firstly change the directory 
+## Dockerfile ko Vim editor me open karo (agar file nahi hai to nayi banao) ---> vim Dockerfile 
+
+## check all the files ---> ls
+
+## to check all hidden files ---> ls -la
+
+## ydi AWS CLI m virtual environment create nhi h to usko create kr do --->  vim .env
+
+## press i ---> in insert mode
+## paste api key here ---> ctrl + shift + v
+
+## if remove .env file then use ---> rm -rf .env
+
+## again check ---> vim .env ---> paste api key here 
+
+## for exist ---> esc + :wq
+
+-----------------------------------------------------------------------------------------
+
+## to create docker file 
+docker build -t docker_username/bot_name
+
+ex.  docker build -t sguddu/aichatbot
+
+## to show docker version -->> docker --version
+
+## to show docker's created images ---> docker images
+
+## for run the docker  ---> docker run -d -p 8501:8501 --env.file .env docker_username/project_name
+
+
 
 
