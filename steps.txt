@@ -16,3 +16,7 @@ Now create app.py file --->
 
 Streamlit aplication ---> 
 function(query) + LLM(gemini) ---> Response (Textual format) 
+
+
+
+
